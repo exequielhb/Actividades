@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulario</h1>
+
+
+    </header>
+
+    <form method="GET">
+    <main><h2>Completa el formulario</h2>
+        
+        
+        <p>Completalo mas abajo:</p>
+        
+        
+        <!-- input text -->
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="nombre" id="Nombre" placeholder="Aca pone tu nombre" maxlength="22">
+        
+        <label for=""> Apellido:
+            <input type="text" name="apellido" placeholder="apelllido">
+        </label>
+
+       <label for="password"> Pass: 
+           <input type="password" name="password" placeholder="contraseña" id="password" required></label>
+
+           <br>
+        <!-- text area -->
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="sssss" > </textarea>
+        <br>
+
+        <!-- checkbox -->
+        <!-- el value es el atributo, dato que llega al backend -->
+       <label> Cosita <input type="checkbox" name="cosita" id="cosita" value="cosita"> </label>
+       <label> Otro <input type="checkbox" name="otro" id="otro" value="otro"> </label>
+       <label> prohibido <input type="checkbox" name="prohibido" id="prohibido" value="prohibido" disabled> </label>
+
+       <br>
+
+       <!-- checkbox radio -->
+       <!-- el name debe ser igual en radio -->
+       <h3>elegui una opcion:</h3>
+       <label>
+           <input type="radio" name="un_solo_name" id="valor1" value="50"> 50
+       </label>
+       <label>
+        <input type="radio" name="un_solo_name" id="valor2" value="100"> 100
+    </label>
+    <label>
+        <input type="radio" name="un_solo_name" id="valor3" value="200"> 200
+    </label>
+    <br>
+
+    <!-- select, options, para lista desplegable de opciones -->
+
+    <h3>Elegui un pais</h3>
+
+    <select name="paises" id="paises">
+        <option value="argentina"> Argentina</option>
+        <option value="venezuela"> venezuela</option>
+        <option value="chile" selected> chile </option>
+        <option value="peru"> peru </option>
+        <option value="uru"> uruguay </option>
+    </select>
+
+    <!-- file upload -->
+
+    <h3>subi tu foto!</h3>
+    <!-- separando el accept con , podemos agregar nuevos atributos -->
+
+    <input type="file" name="foto" id="fotito" accept="image/*, audio/*">
+
+    <br>
+    <br>
+    <!-- botones -->
+
+    <input type="button" name="submit" value="mandale">
+
+    </main>
+        </form>
+    
+</body>
+</html>
